@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500&family=Oswald:wght@200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans';
+  }
+
+body {
+    background-color: #f3f3f3 !important;
+}
+
+h2{
+    font-weight: 600 !important;
+}
+
+/* navbar */
+.navbar{
+    margin-bottom: -70px;
+    background-color: transparent;
+}
+
+@media (max-width: 992px){
+    .navbar-nav{
+        margin-bottom: -56px;
+        background-color: #3D3D3D;
+    }
+}
+
+.navbar-nav li{
+    margin: 0px 10px 0px 10px;
+}
+
+.navbar-toggler-icon{
+    background-image: url(../img/hamburguesa.png) !important;
+    width: 1.5em !important;
+    height: 1.5em !important;
+}
+.navbar-toggler{
+    border: none !important;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    transition: .3s ease all;
+}
+
+.navbar a:hover{
+    color: #ffd28a;
+    transition: .3s ease all;
+}
+
+.navbar .nav-item .nav-link{
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 15px 0px;
+}
+
+.navbar-brand{
+    text-transform: uppercase;
+}
+
+@media(max-width: 992px){
+    .navbar-collapse{
+        position: absolute;
+        top: 56px;
+        text-align: center;
+        width: 100%;
+        left: 0px;
+        background: #00000063;
+    }
+}
+/* navbar */
+
+/* banner */
+.banner{
+    --opacidad-negro: 0.1;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.banner h1{
+    font-family: 'Oswald';
+    font-size: 50px;
+}
+/* banner */
+
+/* titulo-excursion */
+
+.excursiones {
+    position: relative
+}
+
+.excursiones .titulo-excursiones{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.excursiones .titulo-excursiones p{
+    color: #526D80;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+/* titulo-excursion */
+
+/* card-excursion */
+
+.excursiones .card{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    font-weight: 300;
+    border: none !important;
+}
+
+.excursiones .card .card-body{
+    position: relative;
+}
+
+.excursiones .card .card-img-top{
+    height: 230px;
+    object-fit: cover;
+}
+
+.excursiones .card .card-body a{
+    background-color: #526D80;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: absolute;
+    top: -17px;
+    right: 20px;
+    transition: .3s ease all;
+}
+
+.excursiones .card .card-body a:hover{
+    background-color: #998D8F;
+    transition: .3s ease all;
+}
+
+.excursiones .card .card-body a .fa-plus{
+    color: white;
+    font-size: 20px;
+}
+
+.excursiones .card .card-body .titulo{
+    font-size: 22px;
+    font-weight: 700;
+}
+#dataModal .card .card-body .titulo{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.excursiones .card .card-body .ubicacion, 
+#dataModal .card .card-body .ubicacion{
+    color: #a7a7a7;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: -5px;
+}
+
+.excursiones .card .card-body .ubicacion .fa-location-dot,
+#dataModal .card .card-body .ubicacion .fa-location-dot{
+    margin-right: 6px;
+}
+
+.excursiones .card .card-body .puntaje-precio, 
+#dataModal .card .card-body .puntaje-precio{
+    display: flex;
+    justify-content: space-between;
+}
+
+.excursiones .card .card-body .puntaje-precio ul,
+#dataModal .card .card-body .puntaje-precio ul
+{
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.excursiones .card .card-body .puntaje-precio ul .fa-star,
+#dataModal .card .card-body .puntaje-precio ul .fa-star{
+    color: #e1b877;
+}
+
+.excursiones .card .card-body .puntaje-precio p{
+    margin-bottom: 0px;
+}
+
+
+.excursiones .card .card-body .puntaje-precio p:nth-of-type(1),
+#dataModal .card .card-body .puntaje-precio p:nth-of-type(1){
+    font-weight: 400;
+    color: rgb(109 109 109);
+}
+
+.excursiones .card .card-body .puntaje-precio p:nth-of-type(2),
+#dataModal .card .card-body .puntaje-precio p:nth-of-type(2){
+    font-weight: 600;
+    color: rgb(109 109 109);
+}
+
+#dataModal .card .card-body .puntaje-precio p:nth-of-type(1),
+#dataModal .card .card-body .puntaje-precio p:nth-of-type(2){
+    font-size: 22px;
+}
+
+.excursiones .card .card-body .descripcion,
+#dataModal .card .card-body .descripcion{
+    color: #626262;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+#dataModal .card .card-body .pt-3{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+@media(max-width: 992px){
+    #dataModal .card .card-body .pt-3{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.excursiones .card .btn{
+    background-color: #526D80;
+    color: white;
+    font-weight: 300;
+    width: 90%;
+}
+
+.excursiones .card .btn:hover{
+    background-color: #998D8F;
+    color: white;
+    font-weight: 300;
+    width: 90%;
+}
+
+/* card-excursion */
+
+/* ahorro */
+.tarjeta{
+    --opacidad-negro: 0.2;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/ahorro.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.tarjeta a{
+    background-color: #526D80;
+    color: white;
+    font-weight: 400;
+    padding: 10px 40px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.tarjeta p{
+    font-size: 18px;
+}
+
+.tarjeta a:hover{
+    background-color: #998D8F;
+    color: white;
+}
+
+.tarjeta .titulo-tarjeta{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.tarjeta .titulo-tarjeta p{
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #E1B877;
+    font-size: 18px;
+}
+/* ahorro */
+
+/* noticias */
+.noticias{
+    padding: 100px 0px;
+}
+
+.novedades{
+    background-color: #E1B877;
+    border-radius: 10px;
+}
+@media (max-width: 992px){
+    .novedades{
+        margin-bottom: 3rem;
+    }
+}
+
+.novedades a{
+    color: white;
+    background-color: #526D80;
+    padding: 10px 40px;
+    font-size: 18px;
+}
+
+.novedades a:hover{
+    color: white;
+    background-color: #998D8F;
+}
+
+.novedades p{
+    font-weight: 300;
+}
+
+.novedades-contenido .cont-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width:768px){
+    .novedades-contenido .cont-img img{
+        padding-bottom: 1rem;
+    }
+}
+
+.novedades-contenido h3{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.novedades-contenido p{
+    margin-bottom: 0px;
+    font-weight: 300;
+}
+
+.novedades-contenido span{
+    color: #526D80;
+}
+/* noticias */
+
+/* footer */
+.footer{
+    background-color: #3D3D3D;
+    padding: 80px 0px;
+}
+
+.footer .nav .nav-item a, .footer h2, .footer p{
+    color: white;
+}
+
+.footer h2{
+    font-weight: 500 !important;
+}
+
+.footer .nav .nav-item a{
+    font-weight: 300;
+    transition: .3s ease all;
+}
+
+.footer .nav .nav-item a:hover{
+    color: #E1B877;
+    transition: .3s ease all;
+}
+/* footer */
+
+/* flecha */
+#flecha{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+#flecha i{
+    font-size: 26px;
+    color: gray;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+/* flecha */
+
+
+/* modal */
+
+.modalContainer {
+    display: none; 
+    position: fixed; 
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modalContainer .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid lightgray;
+    width: 60%;
+    border-radius: 10px;
+    position: relative;
+}
+
+@media(max-width: 768px){
+    .modalContainer .modal-content{
+        width: 90%;
+    }
+}
+
+.modalContainer .close {
+    color: #aaaaaa;
+    margin-left: auto;
+    font-size: 30px;
+    font-weight: bold;
+    width: fit-content;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    line-height: 45px;
+    z-index: 1;
+}
+
+@media (max-width: 992px){
+    .modalContainer .close {
+        right: 5px;
+        top: 0px;
+    }
+}
+
+.modalContainer .close:hover,
+.modalContainer .close:focus {
+    color: #526D80;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#dataModal .card {
+    display: flex !important;
+    flex-direction: row !important;
+    border: none !important;
+}
+
+@media (max-width: 992px){
+    #dataModal .card {
+        flex-direction: column !important;
+    }
+}
+
+#dataModal img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#dataModal div {
+    width: 100% !important;
+}
+
+#dataModal .card-body{
+    width: 100% !important;
+}
+
+
+#dataModal .card-body > a{
+    display: none;
+}
+
+#dataModal .card-body .puntaje-precio{
+    display: flex;
+    justify-content: space-between;
+}
+
+#dataModal .card .w-100{
+    display: none !important;
+}
+
+/* modal */

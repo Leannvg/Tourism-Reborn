@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "titulo": "Glacier Bay",
+        "ubicacion": "Gustavus, Alaska",
+        "imagen": "img/destinos/glacier.png",
+        "puntuacion": 4,
+        "precio": "500",
+        "descripcion": "Glacier Bay es un destino impresionante en Alaska, famoso por sus glaciares y paisajes espectaculares. Puedes hacer excursiones en kayak, paseos en bote y avistamiento de ballenas. También puedes acampar y hacer senderismo en la zona para experimentar la belleza natural de este destino."
+    },
+    {
+        "id": 2,
+        "titulo": "Denali National Park",
+        "ubicacion": "Healy, Alaska",
+        "imagen": "img/destinos/denali.png",
+        "puntuacion": 5,
+        "precio": "400",
+        "descripcion": "Denali National Park es un destino perfecto para los amantes de la naturaleza y la vida silvestre. Ofrece una variedad de actividades, como caminatas por la montaña, avistamiento de animales, paseos en bicicleta y recorridos en helicóptero. También puedes hacer una visita guiada por el parque para aprender más sobre su historia y los animales que viven en la zona."
+    },
+    {
+        "id": 3,
+        "titulo": "Juneau",
+        "ubicacion": "Juneau, Alaska",
+        "imagen": "img/destinos/juneau.png",
+        "puntuacion": 4,
+        "precio": "300",
+        "descripcion": "Juneau es la capital de Alaska y un destino turístico popular por su belleza natural y su rica historia. Puedes visitar el Museo del Patrimonio de Alaska, hacer una caminata en los senderos cercanos o ir en bicicleta por la ciudad. También hay muchos tours que ofrecen avistamiento de ballenas y vida silvestre, además de la oportunidad de ver los glaciares cercanos."
+    },
+    {
+        "id": 4,
+        "titulo": "Seward",
+        "ubicacion": "Seward, Alaska",
+        "imagen": "img/destinos/seward.png",
+        "puntuacion": 5,
+        "precio": "400",
+        "descripcion": "Seward es un destino pintoresco ubicado en la península de Kenai. Es conocido por su puerto pesquero y sus vistas impresionantes del mar. Puedes hacer excursiones en kayak, visitar el Acuario de Alaska o hacer una caminata por el Parque Nacional de los Fiordos de Kenai. También hay muchos restaurantes excelentes que ofrecen mariscos frescos y otros productos locales."
+    },
+    {
+        "id": 5,
+        "titulo": "Fairbanks",
+        "ubicacion": "Fairbanks, Alaska",
+        "imagen": "img/destinos/fairbanks.png",
+        "puntuacion": 4,
+        "precio": "200",
+        "descripcion": "Fairbanks es un destino turístico popular ubicado en el interior de Alaska. Es conocido por su aurora boreal, que es visible en invierno. En verano, el sol de medianoche es una característica única de la región, lo que significa que el sol nunca se pone completamente durante la noche. Fairbanks también cuenta con numerosos parques y senderos para practicar senderismo, así como ríos y lagos para la pesca y el kayak."
+    },
+    {
+        "id": 6,
+        "titulo": "Valdez",
+        "ubicacion": "Valdez, Alaska",
+        "imagen": "img/destinos/valdez.png",
+        "puntuacion": 4,
+        "precio": "150",
+        "descripcion": "Valdez es una pequeña ciudad ubicada en el sur de Alaska, que ofrece impresionantes vistas al mar, glaciares y montañas. Es un lugar popular para practicar kayak, pesca, senderismo y avistamiento de vida silvestre. Los visitantes pueden hacer un recorrido en bote por los fiordos cercanos, visitar el centro de rehabilitación de fauna silvestre de Valdez y hacer una caminata por el sendero del glaciar Worthington."
+      }
+]
+  
+  
